@@ -92,7 +92,7 @@ class GalleryService
       return;
     }
 
-    $target_dir = "uploads/";
+    $target_dir = dirname(dirname(__DIR__)) . "/uploads/";
     $file_name = basename($_FILES["fileToUpload"]["name"]);
     $target_file = $target_dir . $file_name;
     $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
