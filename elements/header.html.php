@@ -21,6 +21,7 @@
     <?php if (isLogged()):?>
       <div class="logged_menu">
         <a class="btn btn-success" href="<?php echo getProjectPatch() . '/logout.php'; ?>">logout</a>
-        <a class="btn btn-success" href="<?php echo getProjectPatch() . '/gallery.php'; ?>">edit gallery</a>
+        <a class="btn btn-success" href="<?php echo getProjectPatch() . '/gallery.php'; ?>">gallery</a>
+        <a class='btn btn-success' href="<?php echo getProjectPatch() . '/index.php'; ?>">main page</a>
       </div>
     <?php endif;?>

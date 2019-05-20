@@ -5,7 +5,7 @@
   $prev = $page-1;
   $next = $page+1;
 ?>
-<nav aria-label="Page navigation example">
+<nav class="text-center" aria-label="Page navigation example">
   <ul class="pagination">
     <?php if ($page && $page!==1): ?>
       <li class="page-item"><a class="page-link" href="<?php echo $url . '?page=' . $prev; ?>">Previous</a></li>
