@@ -19,7 +19,7 @@ function getProjectPatch(){
 
 function redirect($file, $code = 301)
 {
-	header( 'Location: ' . $_SERVER['REQUEST_SCHEME']. '://' . $_SERVER['HTTP_HOST'] . '/MD/' . $file, true, $code);
+	header( 'Location: ' . getProjectPatch() . '/' . $file, true, $code);
 }
 
 function check($input, $expected){

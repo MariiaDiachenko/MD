@@ -15,8 +15,12 @@ class ImgRepository
   public function countPages()
   {
     $sql = 'SELECT COUNT(id) as n from img';
-    $rows = (int)$this->conn->query($sql)->fetch_assoc()['n'];
-    return intval(ceil($rows/$this->limit));
+    $result = $this->conn->query($sql);
+    if ($result) {
+      $rows = $result->fetch_assoc();
+      return intval(ceil($rows['n']/$this->limit));
+    }
+    return 0;
   }
 
   public function findAll($page, $limit=null)
@@ -35,7 +39,12 @@ class ImgRepository
   public function findById($id)
   {
     $sql = 'SELECT id, name, alt, description, category FROM img WHERE id=\'' . $id . '\';';
-    return $this->conn->query($sql)->fetch_assoc();
+    $result = $this->conn->query($sql);
+    if ($result) {
+      return $this->conn->query($sql)->fetch_assoc();
+    }
+
+    return [];
   }
 
   public function save($name, $alt=null, $description=null, $category=null, $id=null)
