@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `16_diachenko`.`img` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL UNIQUE,
+    `description` VARCHAR(255) DEFAULT NULL,
+    `alt` VARCHAR(45) DEFAULT NULL ,
+    `category` VARCHAR(45) DEFAULT NULL ,
+    PRIMARY KEY (id)
+)
