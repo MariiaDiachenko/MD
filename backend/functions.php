@@ -6,6 +6,7 @@ require_once __DIR__ . '/Gallery/GalleryService.php';
 
 
 function login(){
+	//todo set password
 	if (check('password', 'pass') && check('login', '')) {
 		session_start();
 		$_SESSION['admin'] = 1;
@@ -13,7 +14,7 @@ function login(){
 }
 
 function getProjectPatch(){
-	return $_SERVER['REQUEST_SCHEME']. '://' . $_SERVER['HTTP_HOST'] . '/MD';
+	return $_SERVER['REQUEST_SCHEME']. '://' . $_SERVER['HTTP_HOST'] . $_SERVER['CONTEXT_PREFIX'] . '/MD';
 }
 
 function redirect($file, $code = 301)

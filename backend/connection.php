@@ -1,10 +1,11 @@
 <?php
-
 function getConnection()
 {
-  $servername = "db";
+  //todo set servername to localhost
+  $servername = "";
   $username = "16_diachenko";
-  $password = "F8r2w8t4c2";
+  //todo set password
+  $password = "";
   $database = "16_diachenko";
 
   $conn = new mysqli($servername, $username, $password, $database);

@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . '/require.php';
+// 'CONTEXT_PREFIX'
 login();
 if(isLogged()) {
   header( 'Location: ' . getProjectPatch() . '/gallery.php');
