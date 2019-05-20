@@ -1,5 +1,5 @@
 <?php $this->msg->show(); ?>
-<div class="jumbotron">
+<div class="">
   <form method="post" enctype="multipart/form-data">
     <div class="form-group">
       <? if (!$image['id']): ?>

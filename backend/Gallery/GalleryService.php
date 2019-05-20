@@ -8,7 +8,7 @@ class GalleryService
 
   private $msg;
 
-  private $image=['name' => '', 'alt'=>'', 'description' => ''];
+  private $image=['name' => '', 'alt'=>'', 'description' => '', 'category'=>''];
 
   public function __construct($connection)
   {

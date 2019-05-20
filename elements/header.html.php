@@ -15,11 +15,12 @@
     <link rel="Shortcut icon" href="logo.ico" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="skin/default.css">
+    <link rel="stylesheet" href="css/gallery.css">
   </head>
   <body>
-    <!-- todo style logout to position fixed -->
     <?php if (isLogged()):?>
-      <div class="logout">
-        <a href="<?php echo getProjectPatch() . '/logout.php'; ?>">logout</a>
+      <div class="logged_menu">
+        <a class="btn btn-success" href="<?php echo getProjectPatch() . '/logout.php'; ?>">logout</a>
+        <a class="btn btn-success" href="<?php echo getProjectPatch() . '/gallery.php'; ?>">edit gallery</a>
       </div>
     <?php endif;?>

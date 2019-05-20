@@ -1,0 +1,8 @@
+.logged_menu{
+  position: fixed;
+  top:0;
+  right: 0;
+  background-color: grey;
+  z-index: 100000;
+  padding: 10px;
+}
