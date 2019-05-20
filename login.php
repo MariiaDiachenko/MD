@@ -1,32 +1,11 @@
 <?php
 require_once __DIR__ . '/require.php';
-// 'CONTEXT_PREFIX'
 login();
 if(isLogged()) {
   header( 'Location: ' . getProjectPatch() . '/gallery.php');
 }
+require(__DIR__ . '/elements/header.html.php');
 ?>
-
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <title>MD - Mariia Diachenko</title>
-  <link rel="Shortcut icon" href="logo.ico" />
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.css">
-  <link href="css/responsive-slider.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="Shortcut icon" href="logo.ico" />
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="skin/default.css"> -->
-</head>
-
-<body>
 
 <div class="jumbotron">
   <form  method="post" role="form" class="contactForm">
@@ -40,7 +19,6 @@ if(isLogged()) {
   		</div>
   <button type="submit" class="line-btn green">login</button>
   </form>
-  </div>
 
-  </body>
-</html>
+<?php
+require(__DIR__ . '/elements/footer.html.php');

@@ -31,7 +31,7 @@ class GalleryService
     $page = $page ? $page : 1;
     $images = $this->imgRepo->findAll($page, $limit);
     foreach ($images as $image) {
-      include(__DIR__ . '/image.html.php');
+      require(__DIR__ . '/image.html.php');
     }
   }
 
@@ -48,7 +48,7 @@ class GalleryService
   public function showOne($image)
   {
     $image = $image?:$this->image;
-    include(__DIR__ . '/image.html.php');
+    require(__DIR__ . '/image.html.php');
   }
 
   public function updateImage($image)
@@ -166,7 +166,7 @@ class GalleryService
   public function renderForm($image=null)
   {
     $image = $image ?:$this->image;
-    include(__DIR__ . '/form.html.php');
+    require(__DIR__ . '/form.html.php');
   }
 
 }

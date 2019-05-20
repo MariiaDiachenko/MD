@@ -1,7 +1,7 @@
 <?php
 require_once __DIR__ . '/require.php';
 $gallery = new GalleryService(getConnection());
-include(__DIR__ . '/elements/header.html.php');
+require(__DIR__ . '/elements/header.html.php');
 ?>
 <div class="header">
    <section id="header" class="appear">
@@ -549,4 +549,4 @@ include(__DIR__ . '/elements/header.html.php');
       </section>
       <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
 <?php
-include(__DIR__ . '/elements/footer.html.php');
+require(__DIR__ . '/elements/footer.html.php');

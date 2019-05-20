@@ -3,10 +3,10 @@ function getConnection()
 {
   //todo set servername to localhost
   $servername = "";
-  $username = "16_diachenko";
+  $username = "";
   //todo set password
   $password = "";
-  $database = "16_diachenko";
+  $database = "";
 
   $conn = new mysqli($servername, $username, $password, $database);
   if ($conn->connect_error) {
