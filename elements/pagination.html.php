@@ -16,7 +16,7 @@
     <?php endfor; ?>
 
     <?php
-     if ($page && $page!==$pageCount): ?>
+     if ($pageCount > 1 && $page!==$pageCount): ?>
       <li class="page-item"><a class="page-link" href="<?php echo $url . '?page=' . $next; ?>">Next</a></li>
     <?php endif; ?>
   </ul>

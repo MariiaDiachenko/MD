@@ -124,9 +124,6 @@ class GalleryService
         $this->msg->addAlert("Sorry, only JPG, JPEG, PNG & GIF files are allowed.");
         $uploadOk = 0;
     }
-    if ($id) {
-      $uploadOk = 1;
-    }
 
     if (isset($_POST['alt'])) {
       if(!isValidString($_POST['alt'])){
@@ -156,7 +153,7 @@ class GalleryService
     } else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
             $this->msg->addSuccess(  "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.");
-            $this->imgRepo->save($file_name, $_POST['alt'], $_POST['description'], $_POST['category'], $id);
+            $this->imgRepo->save($file_name, $_POST['alt'], $_POST['description'], $_POST['category']);
         } else {
             $this->msg->addAlert("Sorry, there was an error uploading your file.");
         }
