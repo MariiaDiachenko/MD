@@ -7,6 +7,7 @@ require_once __DIR__ . '/Gallery/GalleryService.php';
 
 function login(){
 	if (check('password', 'pass') && check('login', '')) {
+		session_start();
 		$_SESSION['admin'] = 1;
 	}
 }

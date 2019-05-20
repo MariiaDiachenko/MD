@@ -1,9 +1,9 @@
 <?php
-// require_once __DIR__ . '/require.php';
-// login();
-// if(isLogged()) {
-//   header( 'Location: ' . $_SERVER['HTTP_HOST'] . '/MD/backend-index.php', true, 301);
-// }
+require_once __DIR__ . '/require.php';
+login();
+if(isLogged()) {
+  header( 'Location: ' . getProjectPatch() . '/gallery.php');
+}
 ?>
 
 <!DOCTYPE html>
