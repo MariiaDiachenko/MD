@@ -4,7 +4,6 @@ require_once __DIR__ . '/ImgRepository.php';
 require_once __DIR__ . '/Messages.php';
 require_once __DIR__ . '/Gallery/GalleryService.php';
 
-
 function login(){
 	//todo set password
 	if (check('password', 'pass') && check('login', '')) {
@@ -39,5 +38,5 @@ function isLogged(){
 
 function isValidString($string)
 {
-	return preg_match('/^[\wA-PR-UWY-ZĄĆĘŁŃÓŚŹŻ\s0-9]{0,233}$/iu', $string);
+	return preg_match('/^[\wA-PR-UWY-ZĄĆĘŁŃÓŚŹŻ\s0-9 ]{0,233}$/iu', $string);
 }

@@ -1,6 +1,7 @@
 <?php
 require_once __DIR__ . '/require.php';
 $gallery = new GalleryService(getConnection());
+require(__DIR__ . '/contact.php');
 require(__DIR__ . '/elements/header.html.php');
 ?>
 <div class="header">
@@ -368,11 +369,12 @@ require(__DIR__ . '/elements/header.html.php');
             </div>
             <div class="row">
                <div class="col-md-8 col-md-offset-2">
+                 <?php $messages->show(); ?>
                   <div class="cform" id="contact-form">
                      <div id="sendmessage">
                         Your message has been sent. Thank you!
                      </div>
-                     <form action="contact/contact.php" method="post" role="form" class="contactForm">
+                     <form action="#section-contact" method="post" role="form" class="contactForm">
                         <div class="wow bounceIn">
                            <div class="form-group">
                               <label for="name">Your Name</label>
@@ -395,7 +397,8 @@ require(__DIR__ . '/elements/header.html.php');
                               <div class="validation"></div>
                            </div>
                         </div>
-                        <button type="submit" class="line-btn green">SEND MESSAGE</button>
+                        <input type="submit" value="SEND MESSAGE">
+                        <!-- <button type="submit" class="line-btn green">SEND MESSAGE</button> -->
                      </form>
                   </div>
                </div>
