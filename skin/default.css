@@ -2,80 +2,79 @@
 #1 = 417630
 #2 = 417630
 */
+p {
+	margin: 0 0 10px;
+	text-shadow: 0 0 0px black;
+	color: rgba(148, 149, 148, 0.88);
 a {
-	color: rgba(141, 145, 156, 0.2);
+	color: #555655;
 }
 a:hover {
-	color: rgba(199, 203, 214, 0.3);
+	color: #c7cbd6;
 }
 
 /* menu */
 .nav>li>a:hover {
-	color: #c4c4c4;
+	color: #c7cbd6;
 }
 
 .navbar .navbar-nav > .active > a {
-	color: #c4c4c4;
+	color: #c7cbd6;
 }
 .navbar .navbar-brand:hover {
-	color: #c4c4c4;
+	color: #c7cbd6;
 }
 
 /* flexslider */
 .flex-control-paging li a {
-	background: #c4c4c4;
+	background: #c7cbd6;
 }
 
 .flex-direction-nav a:hover{
-	background-color: #c4c4c4;
+	background-color: #c7cbd6;
 }
 
 .testimonial span.author a {
-	color: #c4c4c4;
+	color: #c7cbd6;
 }
 
 /* --- icon box hover --- */
 .hi-icon-effect-5 .hi-icon {
-	color: #c4c4c4;
-	box-shadow: 0 0 0 4px #c4c4c4;
+	color: #848584;
+	box-shadow: 0 0 0 4px #7b7c7b;
 }
 .no-touch .hi-icon-effect-5 .hi-icon:hover {
-	background: #c4c4c4;
-	box-shadow: 0 0 0 8px #c4c4c4;
+	background: #7b7c7b;
+	box-shadow: 0 0 0 8px #7b7c7b;
 }
 
 
 /* portfolio */
 .portfolio-item .portfolio-desc {
-	background: #c4c4c4;
+	background: #7b7c7b;
 }
 
 /* btn */
 .btn-theme {
-  background: #c4c4c4;
+  background: #7b7c7b;
 }
 .btn-theme:hover,.btn-theme:focus,.btn-theme:active{
-  background: #c4c4c4;
+  background: #7b7c7b;
 }
 .btn-cta,.btn-cta.btn-lg {
-  background: #c4c4c4;
-  border-color: #c4c4c4;
+  background: #7b7c7b;
+  border-color: #7b7c7b;
 }
 
 .btn-cta:focus,.btn-cta:active{
-   border-color: #c4c4c4;
-}
-
-/* contact */
-.validation {
-	color: #c4c4c4;
+   border-color: #7b7c7b;
 }
 
 /* footer */
 .social-circle li a {
-	background: #c4c4c4;
+	background: #7b7c7b;
 }
 
 a.scrollup{
-	background: #c4c4c4;
+	background: rgba(102, 103, 102, 0.87);
 }

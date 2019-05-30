@@ -1,12 +1,3 @@
-/*
-
- tiltShift.js
-
- Demo: http://www.noeltock.com/tilt-shift-css3-jquery-plugin/
- Download: https://github.com/noeltock/tiltShift.js/
- License: GPL GNU (http://www.gnu.org/licenses/)
-
- */
 
 (function($) {
 
@@ -72,7 +63,7 @@
                 afterDirection = angle + 'deg';
             }
 
-            // Apply Gradient Mask to Image Layers
+
 
             $parent.find('.tiltshift-before').css({
                 '-webkit-mask-image' : '-webkit-linear-gradient(' + beforeDirection + ', rgba(0,0,0,1) 0, rgba(0,0,0,1) ' + beforeFall + '%, rgba(0,0,0,0) ' + beforeEnd + '%)'
