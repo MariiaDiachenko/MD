@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="skin/default.css">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   </head>
   <body>
     <?php if (isLogged()):?>
