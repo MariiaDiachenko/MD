@@ -11,8 +11,19 @@ $image = $gallery->getImage($id);
 $gallery->updateImage($image);
 require(__DIR__ . '/elements/header.html.php');
 ?>
-
-<?php $gallery->showOne($image) ?>
+<section id="section-works" class="section appear clearfix">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                      <?php $gallery->showOne($image) ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <h1>Edit image</h1>
 <?php $gallery->renderForm($image);?>
 
