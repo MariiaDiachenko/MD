@@ -1,10 +1,11 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
-    <title><?php echo $title ? $title : 'MD - Mariia Diachenko'; ?></title>
-    <link rel="Shortcut icon" href="logo.ico" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo $title ? $title : 'MD - Mariia Diachenko'; ?></title>
+    <link rel="Shortcut icon" href="logo.ico" />
     <link rel="stylesheet" type="text/css" href="css/isotope.css" media="screen" />
     <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="css/bootstrap.css">
@@ -16,6 +17,9 @@
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="skin/default.css">
     <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="skin/default.css">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
   </head>
   <body>
     <?php if (isLogged()):?>

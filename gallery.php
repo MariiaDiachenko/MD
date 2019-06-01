@@ -23,10 +23,20 @@ require(__DIR__ . '/elements/header.html.php');
   require(__DIR__ . '/elements/pagination.html.php');
   ?>
 
-  <div class="container">
-    <?php $gallery->showGallery(filter_input(INPUT_GET, 'page', FILTER_SANITIZE_NUMBER_INT)); ?>
-  </div>
-  
+  <section id="section-works" class="section appear clearfix">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="row">
+                      <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                        <?php $gallery->showGallery(filter_input(INPUT_GET, 'page', FILTER_SANITIZE_NUMBER_INT)); ?>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
   <?php require(__DIR__ . '/elements/pagination.html.php'); ?>
 </div>
 <?php

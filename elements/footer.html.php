@@ -1,4 +1,3 @@
-<body>
   <script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
@@ -14,9 +13,14 @@
   <script src="js/stellar.js"></script>
   <script src="js/responsive-slider.js"></script>
   <script src="js/jquery.appear.js"></script>
-  <script src="js/validate.js"></script>
   <script src="js/grid.js"></script>
   <script src="js/main.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.localScroll.js"></script>
+  <script>
+      wow = new WOW({}).init();
+  </script>
+  <script src="contactform/contactform.js"></script>
+
 </body>
 </html>

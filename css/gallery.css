@@ -5,8 +5,9 @@
   background-color: grey;
   z-index: 100000;
   padding: 10px;
+  margin-top: 80px;
 }
 .mailto{
   font-size: 6em;
-  color:white; 
+  color:white;
 }
